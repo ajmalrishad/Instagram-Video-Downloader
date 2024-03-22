@@ -67,7 +67,7 @@ class VideoDownloaderApp:
             thumbnail = post._full_metadata_dict['thumbnail_src']
             response = requests.get(thumbnail)
             img = Image.open(BytesIO(response.content))
-            img = img.resize((300, 300), Image.ANTIALIAS)
+            img = img.resize((300, 300), Image.LANCZOS)
             img = ImageTk.PhotoImage(img)
             thumbnail_label = tk.Label(success_window, image=img)
             thumbnail_label.image = img
