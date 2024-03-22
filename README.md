@@ -1,4 +1,4 @@
-# Instagram-Video-Downloader
+Python Tkinter App for download video from TikTok
 
 #Overview
 This App allows you to easily download videos from Instagram by simply providing the video URL. It utilizes the instaloader Python package to handle the downloading process.
